@@ -101,6 +101,8 @@ class Homepage extends StatelessWidget {
                             scrollDirection: Axis.horizontal,
                             child: Row(
                               children: [
+
+                                
                                 InkWell(
                                   onTap: () {
                                     Navigator.pushNamed(context, '/p');
@@ -110,118 +112,127 @@ class Homepage extends StatelessWidget {
                                     diseaseName: 'Pneumonia',
                                   ),
                                 ),
-                                InkWell(
-                                  onTap: () {
-                                    Navigator.pushNamed(context, '/b');
-                                  },
-                                  child: DiseaseCard(
-                                    image: 'Brain Tumour.jpg',
-                                    diseaseName: 'Brain Tumour',
-                                  ),
-                                ),
+
+
+                                // InkWell(
+                                //   onTap: () {
+                                //     Navigator.pushNamed(context, '/b');
+                                //   },
+                                //   child: DiseaseCard(
+                                //     image: 'Brain Tumour.jpg',
+                                //     diseaseName: 'Brain Tumour',
+                                //   ),
+                                // ),
+
+
                               ],
                             ),
                           ),
                           const SizedBox(
                             height: 30,
                           ),
-                          const Text(
-                            'Disease Prediction',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20,
-                              color: Color(0xff03045E),
-                            ),
-                          ),
-                          SingleChildScrollView(
-                            scrollDirection: Axis.horizontal,
-                            child: Row(
-                              children: [
-                                InkWell(
-                                  onTap: () {
-                                    Navigator.pushNamed(context, '/h');
-                                  },
-                                  child: DiseaseCard(
-                                    image: 'Heart Disease.jpg',
-                                    diseaseName: 'Heart Disease',
-                                  ),
-                                ),
-                                InkWell(
-                                  onTap: () {
-                                    Navigator.pushNamed(context, '/d');
-                                  },
-                                  child: DiseaseCard(
-                                    image: 'Diabetes.jpg',
-                                    diseaseName: 'Diabetes',
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
+
+                          // const Text(
+                          //   'Disease Prediction',
+                          //   style: TextStyle(
+                          //     fontWeight: FontWeight.bold,
+                          //     fontSize: 20,
+                          //     color: Color(0xff03045E),
+                          //   ),
+                          // ),
+
+
+                          // SingleChildScrollView(
+                          //   scrollDirection: Axis.horizontal,
+                          //   child: Row(
+                          //     children: [
+                          //       InkWell(
+                          //         onTap: () {
+                          //           Navigator.pushNamed(context, '/h');
+                          //         },
+                          //         child: DiseaseCard(
+                          //           image: 'Heart Disease.jpg',
+                          //           diseaseName: 'Heart Disease',
+                          //         ),
+                          //       ),
+                          //       InkWell(
+                          //         onTap: () {
+                          //           Navigator.pushNamed(context, '/d');
+                          //         },
+                          //         child: DiseaseCard(
+                          //           image: 'Diabetes.jpg',
+                          //           diseaseName: 'Diabetes',
+                          //         ),
+                          //       ),
+                          //     ],
+                          //   ),
+                          // ),
+
+
                           const SizedBox(
                             height: 30,
                           ),
-                          Align(
-                            alignment: Alignment.center,
-                            child: ElevatedButton(
-                              style: ElevatedButton.styleFrom(
-                                minimumSize: const Size(300, 60),
-                                backgroundColor: Colors.transparent,
-                              ),
-                              onPressed: () {
-                                showModalBottomSheet(
-                                    backgroundColor: Colors.transparent,
-                                    context: context,
-                                    isScrollControlled: true,
-                                    builder: (context) {
-                                      return DraggableScrollableSheet(
-                                        initialChildSize: 0.6,
-                                        minChildSize: 0.5,
-                                        maxChildSize: 0.8,
-                                        builder: (_, controller) {
-                                          return Container(
-                                            decoration: const ShapeDecoration(
-                                              shape: RoundedRectangleBorder(
-                                                  borderRadius:
-                                                      BorderRadius.vertical(
-                                                top: Radius.circular(20),
-                                              )),
-                                              image: DecorationImage(
-                                                image: AssetImage(
-                                                  'assets/images/home.jpg',
-                                                ),
-                                                fit: BoxFit.cover,
-                                              ),
-                                            ),
-                                            child: ListView.separated(
-                                              controller: controller,
-                                              physics:
-                                                  const BouncingScrollPhysics(
-                                                parent:
-                                                    AlwaysScrollableScrollPhysics(),
-                                              ),
-                                              itemBuilder: (context, index) =>
-                                                  ItemList(
-                                                artical: mylist.articles![index],
-                                              ),
-                                              separatorBuilder:
-                                                  (context, index) =>
-                                                      const SizedBox(
-                                                height: 10,
-                                              ),
-                                              itemCount: mylist.articles!.length,
-                                            ),
-                                          );
-                                        },
-                                      );
-                                    });
-                              },
-                              child: const Text(
-                                'Top Health News',
-                                style: TextStyle(fontSize: 20),
-                              ),
-                            ),
-                          ),
+                          // Align(
+                          //   alignment: Alignment.center,
+                          //   child: ElevatedButton(
+                          //     style: ElevatedButton.styleFrom(
+                          //       minimumSize: const Size(300, 60),
+                          //       backgroundColor: Colors.transparent,
+                          //     ),
+                          //     onPressed: () {
+                          //       showModalBottomSheet(
+                          //           backgroundColor: Colors.transparent,
+                          //           context: context,
+                          //           isScrollControlled: true,
+                          //           builder: (context) {
+                          //             return DraggableScrollableSheet(
+                          //               initialChildSize: 0.6,
+                          //               minChildSize: 0.5,
+                          //               maxChildSize: 0.8,
+                          //               builder: (_, controller) {
+                          //                 return Container(
+                          //                   decoration: const ShapeDecoration(
+                          //                     shape: RoundedRectangleBorder(
+                          //                         borderRadius:
+                          //                             BorderRadius.vertical(
+                          //                       top: Radius.circular(20),
+                          //                     )),
+                          //                     image: DecorationImage(
+                          //                       image: AssetImage(
+                          //                         'assets/images/home.jpg',
+                          //                       ),
+                          //                       fit: BoxFit.cover,
+                          //                     ),
+                          //                   ),
+                          //                   child: ListView.separated(
+                          //                     controller: controller,
+                          //                     physics:
+                          //                         const BouncingScrollPhysics(
+                          //                       parent:
+                          //                           AlwaysScrollableScrollPhysics(),
+                          //                     ),
+                          //                     itemBuilder: (context, index) =>
+                          //                         ItemList(
+                          //                       artical: mylist.articles![index],
+                          //                     ),
+                          //                     separatorBuilder:
+                          //                         (context, index) =>
+                          //                             const SizedBox(
+                          //                       height: 10,
+                          //                     ),
+                          //                     itemCount: mylist.articles!.length,
+                          //                   ),
+                          //                 );
+                          //               },
+                          //             );
+                          //           });
+                          //     },
+                          //     child: const Text(
+                          //       'Top Health News',
+                          //       style: TextStyle(fontSize: 20),
+                          //     ),
+                          //   ),
+                          // ),
                           const SizedBox(
                             height: 20,
                           ),
