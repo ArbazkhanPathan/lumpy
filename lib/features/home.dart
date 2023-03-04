@@ -90,7 +90,7 @@ class Homepage extends StatelessWidget {
                             height: 10,
                           ),
                           const Text(
-                            'Disease Detection',
+                            'Lumpy Detection',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 20,
@@ -109,7 +109,7 @@ class Homepage extends StatelessWidget {
                                   },
                                   child: DiseaseCard(
                                     image: 'Pneumonia.jpg',
-                                    diseaseName: 'Pneumonia',
+                                    diseaseName: 'Lumpy',
                                   ),
                                 ),
 
