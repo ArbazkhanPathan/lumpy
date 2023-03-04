@@ -1,41 +1,33 @@
 {
   "project_info": {
-    "project_number": "549027141099",
-    "project_id": "projecto-63ff1",
-    "storage_bucket": "projecto-63ff1.appspot.com"
+    "project_number": "631293561619",
+    "project_id": "moneymanager-dd519",
+    "storage_bucket": "moneymanager-dd519.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:549027141099:android:5fc76046fef23cbff7b5ae",
+        "mobilesdk_app_id": "1:631293561619:android:67f1e42808b6d97b35a8e6",
         "android_client_info": {
-          "package_name": "com.example.healthcare"
+          "package_name": "com.example.lumpy"
         }
       },
       "oauth_client": [
         {
-          "client_id": "549027141099-u36p937sg8fj19f4m884gun3fsdfipcr.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.healthcare",
-            "certificate_hash": "55a5f9faf794b012ff0955d84af87d4d6f25b916"
-          }
-        },
-        {
-          "client_id": "549027141099-s6tco8q8spm8pvnumvid6u8qe9n3ohrj.apps.googleusercontent.com",
+          "client_id": "631293561619-m1mefdkt2g96bak1n14vio98pv0iqshf.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCr83MbFm67zl1rs0X1OyRpIkXoJH71GAo"
+          "current_key": "AIzaSyCJSJr_l_vcL8T9glo-2uMDlIU0i4iVcAQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "549027141099-s6tco8q8spm8pvnumvid6u8qe9n3ohrj.apps.googleusercontent.com",
+              "client_id": "631293561619-m1mefdkt2g96bak1n14vio98pv0iqshf.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
