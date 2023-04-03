@@ -1,2 +1,3 @@
-Congratulations, you are a normal case
-Unfortunately, you have pneumonia
+MILD
+normal_cattle
+severe

@@ -29,7 +29,7 @@ class PneumoniaScreen extends StatelessWidget {
               icon: const Icon(Icons.arrow_back_ios_rounded , size: 30, color: Colors.black,),
             ),
             title: const Text(
-              'Pneumonia detection',
+              'Lumpy detection',
               style: TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.w700,
@@ -63,7 +63,7 @@ class PneumoniaScreen extends StatelessWidget {
                       ),
                     ),
                     const Text(
-                      'Pneumonia is an air infection that inflames the air sacs in one or both lungs. The air sacs may fill with fluid or pus, causing cough, phlegm or pus, fever, chills, and difficulty breathing.',
+                      'Lumpy disease, also known as bovine epitheliosis or Knopvelsiekte, is a viral disease that affects cattle, particularly in Africa. The disease is caused by the lumpy skin disease virus, which is transmitted by biting insects such as mosquitoes and ticks. The virus causes nodules or lumps to form on the skin of the infected animal, which can lead to discomfort, secondary infections, and reduced productivity. In severe cases, the disease can lead to death. There is currently no specific treatment for lumpy disease, and prevention strategies focus on controlling insect populations and vaccinating susceptible animals.',
                       style: TextStyle(
                         fontSize: 19,
                         fontFamily: 'seguisb',
@@ -76,19 +76,19 @@ class PneumoniaScreen extends StatelessWidget {
                     Column(
                       children: [
                         OpenCloseTextBox(
-                          text: '- Chest pain when you breathe orcough \n- Confusion or changes in mental \n- awareness \n- Cough \n- Fatigue\n- Lower than normal body temperature\n- Nausea, vomiting or diarrhea\n- Shortness of breath',
+                          text: '- Development of nodules or lumps on the skin \n- Pain and discomfort associated with the nodules \n- Lethargy and loss of weight \n- Fever \n- Loss of appetite \n- Decreased milk production \n- Neurological symptoms such as seizures or paralysis in severe cases.',
                           title: 'Symptoms',
                           clr: Colors.blue,
                           txtclr: Colors.white,
                         ),
                         OpenCloseTextBox(
-                          text: 'Many germs can cause pneumonia. The most common are bacteria and viruses in the air we breathe. Your body usually' 'prevents these germs from infecting your lungs. But sometimes these germs can overpower your immune system, even if' 'your health is generally good.' 'Pneumonia is classified according to the' ' Types of germs that cause it and where' 'you got the infection. Community-acquired pneumonia\n- Bacteria\n- Bacteria-like organisms\n- Fungi\n- Viruses.including COVID-19\nHospital-acquired pneumonia\nSome people catch pneumonia during a hospital stay for another illness. Hospital- acquired pneumonia can be serious because the people who get it already sick. Health care-acquired pneumonia It is a bacterial infection that occurs in people who live in long-term care facilities or who receive care in outpatient clinics.',
+                          text: 'Lumpy disease in cows is caused by the lumpy skin disease virus (LSDV), which is a member of the Capripoxvirus family.\n- biting insects such as mosquitoes and ticks\n- Direct contact with infected animals or contaminated objects can also spread the virus\n- tress factors such as transport, overcrowding, and malnutrition can weaken the cows immune system, making it more susceptible to the virus\n The disease is most commonly found in Africa and the Middle East, where the insect vectors are present and cattle populations are high',
                           title: 'Causes',
                           clr: Colors.transparent,
                           txtclr: Colors.grey,
                         ),
                         OpenCloseTextBox(
-                          text:'- Children who are 2years old or younger\n- People who are age 65 or older\n- Being Hospitalized\n- Chronic disease\n- Smoking\n- Weakened or suppressed immune\n- system\n- Shortness of breath',
+                          text:'- Cattle living in areas with a high prevalence of lumpy disease are at an increased risk of infection\n- Insect vectors such as mosquitoes and ticks can increase the risk of transmission, particularly during the rainy season\n- Cattle that are stressed or have weakened immune systems are more susceptible to infection and may be at a higher risk of developing severe symptoms\n- Overcrowding, poor nutrition, and inadequate husbandry practices can also increase the risk of lumpy disease.',
                           title: 'Risk factors',
                           clr: Colors.red,
                           txtclr: Colors.white,
@@ -111,7 +111,7 @@ class PneumoniaScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children:  [
                         const Text(
-                          'Medical Corner provides pneumonia',
+                          'Medical Corner provides Lumpy',
                           style: TextStyle(
                             fontSize: 18,
                             color: Colors.grey,
@@ -161,7 +161,7 @@ class PneumoniaScreen extends StatelessWidget {
                                   ),
                                 ),
                                 const Text(
-                                  'Pneumonia',
+                                  'Lumpy',
                                   style: TextStyle(
                                       color: Color(0xff004EC4),
                                       fontSize: 20
@@ -243,7 +243,7 @@ class PneumoniaScreen extends StatelessWidget {
                       height: 9,
                     ),
                     const Text(
-                      'To help prevent pneumonia:\n- Get vaccinated\n- Practice good hygiene\n- Do not smoke\n- Keep your immune system strong',
+                      'To help prevent Lumpy:\n- Get vaccinated\n- use of insecticides\n- maintaining clean and hygienic conditions\n- quarantine measures can help prevent the introduction of the disease to new areas',
                       style: TextStyle(
                         fontSize: 19,
                         fontFamily: 'seguisb',

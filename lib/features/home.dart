@@ -99,19 +99,27 @@ class Homepage extends StatelessWidget {
                           ),
                           SingleChildScrollView(
                             scrollDirection: Axis.horizontal,
+                            
                             child: Row(
                               children: [
 
                                 
-                                InkWell(
-                                  onTap: () {
-                                    Navigator.pushNamed(context, '/p');
-                                  },
-                                  child: DiseaseCard(
-                                    image: 'Pneumonia.jpg',
-                                    diseaseName: 'Lumpy',
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 60,top: 60), // add left padding of 10 units
+                                  child: InkWell(
+                                    onTap: () {
+                                      Navigator.pushNamed(context, '/p');
+                                    },
+                                    child: DiseaseCard(
+                                      image: 'cow.jpeg',
+                                      diseaseName: 'Lumpy',
+                                      
+                                    ),
                                   ),
                                 ),
+
+                                
+                                
 
 
                                 // InkWell(
@@ -169,9 +177,9 @@ class Homepage extends StatelessWidget {
                           // ),
 
 
-                          const SizedBox(
-                            height: 30,
-                          ),
+                          // const SizedBox(
+                          //   height: 30,
+                          // ),
                           // Align(
                           //   alignment: Alignment.center,
                           //   child: ElevatedButton(
@@ -235,6 +243,7 @@ class Homepage extends StatelessWidget {
                           // ),
                           const SizedBox(
                             height: 20,
+                            width: 30,
                           ),
                         ],
                       ),

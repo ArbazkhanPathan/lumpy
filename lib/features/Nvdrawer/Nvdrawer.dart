@@ -211,7 +211,7 @@ class Nvdrawer extends StatelessWidget {
                 ),
               ),
               const SizedBox(
-                height: 20,
+                height: 10,
               ),
             ],
           ),

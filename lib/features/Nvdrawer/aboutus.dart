@@ -26,7 +26,7 @@ class Aboutus extends StatelessWidget {
             ),
             Center(
               child: Text(
-                'We are final-year students studying ',
+                'Welcome to our Lumpy Cow Disease Prediction App! ',
                 style: TextStyle(
                   fontSize: 19,
                   fontFamily: 'seguisb',
@@ -36,7 +36,7 @@ class Aboutus extends StatelessWidget {
             ),
             Center(
               child: Text(
-                'Computer Science at Akhbar Elyoum Academy.',
+                'Our Lumpy Cow Disease Prediction App is designed to help farmers and livestock owners predict the likelihood of their cows contracting this disease.',
                 style: TextStyle(
                   fontSize: 17,
                   fontFamily: 'seguisb',
@@ -46,7 +46,7 @@ class Aboutus extends StatelessWidget {
             ),
             Center(
               child: Text(
-                'We developed this app with the aim of helping',
+                'We believe that early detection and prevention are key to minimizing the spread of lumpy cow disease and protecting the health and well-being of cows.',
                 style: TextStyle(
                   fontSize: 17,
                   fontFamily: 'seguisb',
@@ -56,7 +56,7 @@ class Aboutus extends StatelessWidget {
             ),
             Center(
               child: Text(
-                'to provide early disease detection.',
+                'Our team consists of experienced veterinarians and data scientists who are committed to early detection and prevention.',
                 style: TextStyle(
                   fontSize: 19,
                   fontFamily: 'seguisb',
