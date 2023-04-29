@@ -2,19 +2,31 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intro_example/core/cubit/cubit.dart';
 import 'package:intro_example/core/cubit/states.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
+// User user = FirebaseAuth.instance.currentUser;
 class Profile extends StatelessWidget {
   Profile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return BlocConsumer<AppCubit, AppState>(
+      // listener: (context, state) {
+      //   if(AppCubit.get(context).user.email == null){
+      //     // User user = FirebaseAuth.instance.currentUser!;
+      //     // User user = FirebaseAuth.instance.currentUser;
+      //     // AppCubit.get(context).getUserData(user!.uid);
+      //   }
+      // },
       listener: (context, state) {
-        // if(AppCubit.get(context).user.email == null){
-        //   User user = FirebaseAuth.instance.currentUser!;
-        //   AppCubit.get(context).getUserData(user.uid);
-        // }
+        if (AppCubit.get(context).user.email == null) {
+          User? user = FirebaseAuth.instance.currentUser;
+          if (user != null) {
+            AppCubit.get(context).getUserData(user.uid);
+          }
+        }
       },
+      
       builder: (context, state) {
         AppCubit cubit = AppCubit.get(context);
         return Scaffold(
