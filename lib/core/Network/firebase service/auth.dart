@@ -31,6 +31,19 @@ class UserF {
 
 }
 
+
+void storeUserData() async {
+  User? user = FirebaseAuth.instance.currentUser;
+  CollectionReference usersRef = FirebaseFirestore.instance.collection('users');
+  DocumentReference userDocRef = usersRef.doc(user!.uid);
+
+  await userDocRef.set({
+    'email': user!.email,
+    'name': user.displayName,
+  });
+}
+
+
 class AuthBase {
   Future<User?> login(String email, String password) async {
     try {
