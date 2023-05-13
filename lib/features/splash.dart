@@ -9,11 +9,11 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AnimatedSplashScreen(
-      splash: Lottie.asset('assets/lottie_animations/splash.json'),
+      splash: Lottie.asset('assets/lottie_animations/cow-drink-milk.json'),
       backgroundColor: Colors.lightBlue,
       nextScreen: const IntroductionPage(),
       splashIconSize: 300,
-      duration: 2000,
+      duration: 5000,
       splashTransition: SplashTransition.fadeTransition,
       pageTransitionType: PageTransitionType.leftToRightWithFade,
       animationDuration: const Duration(seconds: 1),

@@ -220,36 +220,3 @@ class Result extends StatelessWidget {
     );
   }
 }
-
-// Future pickImagetocloud() async {
-//   final picker = ImagePicker();
-//   final pickedImage = await picker.getImage(source: ImageSource.gallery);
-//   final pickedImageFile = File(pickedImage!.path);
-//   setState(() {
-//     _loading = true;
-//
-//     _pickedImage = pickedImageFile;
-//   });
-//   upload( File(_pickedImage!.path));
-// }
-// // for upload to cloud
-// Future upload( File imagee) async {
-//   final user = FirebaseAuth.instance.currentUser;
-//   final _id = user!.uid;
-//   final ref = FirebaseStorage.instance.ref().
-//   child('userImages').child(_id+'.Pneumonia.jpg');
-//   await ref.putFile(File(imagee.path));
-//   url = await ref.getDownloadURL();
-//   if( user != null) {
-//     await FirebaseFirestore.instance.collection('users').
-//     doc(user.uid).update({
-//       'imageurl': url,
-//     });
-//     setState(() {
-//       _loading = false;
-//     });
-//   }
-//   else {
-//     print('erorrrrrr');
-//   }
-// }

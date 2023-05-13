@@ -25,22 +25,22 @@ class AppCubit extends Cubit<AppState> {
     ).then((value) {
       loading = false;
       emit(ModelLoadedSTate());
-      print('pneumonia model loaded');
+      print('Lumpy model loaded');
     });
   }
 
-  Future loadBrainTumourModel() async {
-    Tflite.close();
-    emit(ModelLoadedSTate());
-    await Tflite.loadModel(
-      model: "assets/tflite_models/model_brain_tumour.tflite",
-      labels: "assets/tflite_models/labels_brain_tumour.txt",
-    ).then((value) {
-      loading = false;
-      emit(ModelLoadedSTate());
-      print('brain tumour model loaded');
-    });
-  }
+  // Future loadBrainTumourModel() async {
+  //   Tflite.close();
+  //   emit(ModelLoadedSTate());
+  //   await Tflite.loadModel(
+  //     model: "assets/tflite_models/model_brain_tumour.tflite",
+  //     labels: "assets/tflite_models/labels_brain_tumour.txt",
+  //   ).then((value) {
+  //     loading = false;
+  //     emit(ModelLoadedSTate());
+  //     print('brain tumour model loaded');
+  //   });
+  // }
 
   final ImagePicker _picker = ImagePicker();
 

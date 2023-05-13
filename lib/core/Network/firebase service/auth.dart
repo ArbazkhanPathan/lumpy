@@ -38,7 +38,7 @@ void storeUserData() async {
   DocumentReference userDocRef = usersRef.doc(user!.uid);
 
   await userDocRef.set({
-    'email': user!.email,
+    'email': user.email,
     'name': user.displayName,
   });
 }

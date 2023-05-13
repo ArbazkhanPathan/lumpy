@@ -73,7 +73,7 @@ class _IntroductionPageState extends State<IntroductionPage> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: const [
                                 Spacer(),
-                                Text('Welcome to Medical Corner!',
+                                Text('Welcome to Lumpy Analyzer !',
                                     maxLines: 2,
                                     style: TextStyle(
                                       color: Color(0xff03045E),
@@ -82,7 +82,7 @@ class _IntroductionPageState extends State<IntroductionPage> {
                                     )),
                                 Spacer(),
                                 Text(
-                                  'Medical Corner is a medical application that provides detection of pneumonia and brain tumour. It also provides prediction for heart disease, and diabetes.',
+                                  'Lumpy Analyzer is  a medical application that provides detection of Lumpy. It also provides prediction for Normal, Mild and Severe conditions.',
                                   style: TextStyle(
                                     color: Colors.grey,
                                     fontSize: 18,
