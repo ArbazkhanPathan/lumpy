@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intro_example/core/cubit/cubit.dart';
@@ -31,8 +32,10 @@ class _Sign_upState extends State<Sign_up> {
         if (state is SignUpErrorState) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
-              backgroundColor: Colors.red,
-              content: Text(state.error),
+              backgroundColor: Color.fromARGB(255, 8, 226, 4),
+              content: Text('Thank you for sign up, \n now go on login page and login to the account'),
+              // backgroundColor: Colors.red,
+              // content: Text(state.error),
             ),
           );
         }
@@ -187,6 +190,36 @@ class _Sign_upState extends State<Sign_up> {
                           ),
                         ),
                       ),
+                      Container(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 30,
+                                vertical: 16,
+                              ),
+                              alignment: Alignment.center,
+                              child: RichText(
+                                text: TextSpan(
+                                    style: const TextStyle(color: Colors.grey),
+                                    children: [
+                                      const TextSpan(
+                                          text: 'alreaqdy have an account? ',
+                                          style:
+                                              TextStyle(color: Colors.white)),
+                                      TextSpan(
+                                        text: ' login',
+                                        style: const TextStyle(
+                                            color: Color(0xff03045E),
+                                            fontWeight: FontWeight.w600,
+                                            fontSize: 15),
+                                        recognizer: TapGestureRecognizer()
+                                          ..onTap = () {
+                                            FocusScope.of(context).unfocus();
+                                            Navigator.pushNamed(
+                                                context, '/');
+                                          },
+                                      ),
+                                    ]),
+                              ),
+                            ),
                       const SizedBox(
                         height: 10,
                       ),

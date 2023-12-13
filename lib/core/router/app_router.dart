@@ -45,7 +45,7 @@ class AppRouter {
       //       direction: AxisDirection.left, child: const HeartDisease());
       case screens.profile:
         return CustomPageRoute(
-            direction: AxisDirection.right, child: Profile());
+            direction: AxisDirection.right, child: const Profile());
       case screens.aboutus:
         return CustomPageRoute(
             direction: AxisDirection.right, child: const Aboutus());

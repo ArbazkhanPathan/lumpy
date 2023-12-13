@@ -190,7 +190,7 @@ class PneumoniaScreen extends StatelessWidget {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => lastresult() ,
+                                          builder: (context) => const lastresult() ,
                                         ),
                                       );
                                     },

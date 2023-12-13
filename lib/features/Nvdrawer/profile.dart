@@ -6,7 +6,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 
 // User user = FirebaseAuth.instance.currentUser;
 class Profile extends StatelessWidget {
-  Profile({Key? key}) : super(key: key);
+  const Profile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

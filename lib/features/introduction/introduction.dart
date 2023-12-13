@@ -68,10 +68,10 @@ class _IntroductionPageState extends State<IntroductionPage> {
                           child: SizedBox(
                             width: deviceSize.width * 0.8,
                             height: deviceSize.height * 0.4,
-                            child: Column(
+                            child: const Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
-                              children: const [
+                              children: [
                                 Spacer(),
                                 Text('Welcome to Lumpy Analyzer !',
                                     maxLines: 2,

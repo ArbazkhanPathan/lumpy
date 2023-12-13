@@ -33,14 +33,10 @@ class _lastresult extends State<lastresult> {
 
     final DocumentSnapshot userDoc = await FirebaseFirestore.instance.
     collection('users').doc(_uid).get();
-    if (userDoc == null) {
-      return;
-    } else {
-      setState(() {
-        _userImageUrl = userDoc.get('imageurl');
-      });
-    }
-    // print("name $_name");
+    setState(() {
+      _userImageUrl = userDoc.get('imageurl');
+    });
+      // print("name $_name");
   }
 
   @override

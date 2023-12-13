@@ -81,6 +81,7 @@ class AuthBase {
         print(e.toString());
       }
     }
+    return null;
   }
 
   Future<DocumentSnapshot<Object?>?> getUserData(String uid) async {

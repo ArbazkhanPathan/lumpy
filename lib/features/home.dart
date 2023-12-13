@@ -6,7 +6,6 @@ import 'package:intro_example/core/cubit/states.dart';
 import 'package:intro_example/features/News/data_models/News.dart';
 import 'package:intro_example/features/Nvdrawer/Nvdrawer.dart';
 import 'package:intro_example/features/custom%20widgets/Disease_card.dart';
-import 'package:intro_example/features/News/news_component.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({Key? key}) : super(key: key);

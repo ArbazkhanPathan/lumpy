@@ -62,8 +62,8 @@ class Nvdrawer extends StatelessWidget {
                   Navigator.pushNamed(context, '/profile');
                   Scaffold.of(context).closeDrawer();
                 },
-                child: Row(
-                  children: const [
+                child: const Row(
+                  children: [
                     Icon(
                       Icons.account_circle_outlined,
                       size: 40,
@@ -93,8 +93,8 @@ class Nvdrawer extends StatelessWidget {
                   Navigator.pushNamed(context, '/Home');
                   Scaffold.of(context).closeDrawer();
                 },
-                child: Row(
-                  children: const [
+                child: const Row(
+                  children: [
                     Icon(
                       Icons.home_outlined,
                       size: 40,
@@ -124,8 +124,8 @@ class Nvdrawer extends StatelessWidget {
                   Navigator.pushNamed(context, '/about');
                   Scaffold.of(context).closeDrawer();
                 },
-                child: Row(
-                  children: const [
+                child: const Row(
+                  children: [
                     Icon(
                       Icons.info_outline,
                       size: 40,
@@ -156,8 +156,8 @@ class Nvdrawer extends StatelessWidget {
                   Scaffold.of(context).closeDrawer();
 
                 },
-                child: Row(
-                  children: const [
+                child: const Row(
+                  children: [
                     Icon(
                       Icons.contact_page_outlined,
                       size: 40,
@@ -187,8 +187,8 @@ class Nvdrawer extends StatelessWidget {
                   AppCubit.get(context).signOut();
                   Navigator.pushNamed(context, '/intro');
                 },
-                child: Row(
-                  children: const [
+                child: const Row(
+                  children: [
                     Icon(
                       Icons.logout,
                       size: 40,
