@@ -7,7 +7,6 @@ import 'package:intro_example/core/cubit/states.dart';
 import 'package:intro_example/core/router/app_router.dart';
 import 'core/Network/news api service/dio_helper.dart';
 
-
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
