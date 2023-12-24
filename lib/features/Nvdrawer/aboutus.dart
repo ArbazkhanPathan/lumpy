@@ -62,7 +62,7 @@ class Aboutus extends StatelessWidget {
           ),
           Center(
             child: Text(
-              '\nGuild Name - Prof. Dipali Patil.',
+              '\nGuide Name - Prof. Dipali Patil.',
               style: TextStyle(
                 fontSize: 19,
                 fontFamily: 'seguisb',

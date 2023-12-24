@@ -90,6 +90,19 @@ class Contactus extends StatelessWidget {
               const SizedBox(
                 height: 30,
               ),
+              const Padding(
+                padding: EdgeInsets.all(8.0),
+                child:  Text(
+
+                  ' Contact us :- \n"+91 8308890011" \n"+91 9370225579"',
+                  style:  TextStyle(
+                    fontSize: 27,
+                    fontFamily: 'seguisb',
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
